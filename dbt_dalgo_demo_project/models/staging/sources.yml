@@ -1,0 +1,77 @@
+sources:
+  - name: dalgo_demo_project_raw
+    description: "Raw data sources for the Dalgo demo project."
+    database: demoaccount
+    schema: demo_project_jaffle_shop
+    tables:
+      - name: raw_customers
+        description: "This table contains all customer orders."
+        columns: 
+        - name: id
+          tests:
+            - not_null
+            - unique
+
+      - name: raw_items
+        description: "This table contains all order item details."
+        columns: 
+        - name: id
+          tests:
+            - not_null
+            - unique
+        # - name: order_id
+        #   tests:
+        #     - not_null
+        #     - relationships:
+        #         to: ref('raw_orders')
+        #         field: id
+        - name: sku
+          tests:
+            - not_null
+            - relationships:
+                to: ref('raw_products')
+                field: sku
+            
+      - name: raw_orders
+        description: "This table contains all orders placed by customers."
+        columns: 
+        - name: id  
+          tests:
+            - not_null
+            - unique
+        - name: customer
+          tests:
+            - not_null
+            - relationships:
+                to: ref('raw_customers')
+                field: id
+        - name: store_id
+          tests:
+            - not_null
+            - relationships:
+                to: ref('raw_stores')
+                field: id
+
+      - name: raw_products
+        description: "This table contains all product details."
+        columns: 
+        - name: sku
+          tests:
+            - not_null
+            - unique
+            
+      - name: raw_stores
+        description: "This table contains all store details."
+        columns: 
+        - name: id
+          tests:
+            - not_null
+            - unique
+      
+      - name: raw_supplies
+        description: "This table contains all supply details."
+        columns: 
+        - name: id
+          tests:
+            - not_null
+            - unique

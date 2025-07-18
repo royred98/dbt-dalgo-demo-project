@@ -1,0 +1,78 @@
+[0m21:56:29.110287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B5013340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B72AEC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B72AEE20>]}
+
+
+============================== 21:56:29.117269 | e2271df4-1fe3-4b08-9551-ef7bd9bc6bcb ==============================
+[0m21:56:29.117269 [info ] [MainThread]: Running with dbt=1.10.4
+[0m21:56:29.118268 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\royre\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt init', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:56:49.965097 [debug] [MainThread]: Starter project path: C:\Users\royre\Documents\Data pipeline projects\dbt dalgo demo project\venv\lib\site-packages\dbt\include\starter_project
+[0m21:56:50.071339 [info ] [MainThread]: 
+Your new dbt project "dbt_dalgo_demo_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:56:50.073333 [info ] [MainThread]: Setting up your profile.
+[0m22:00:43.572371 [info ] [MainThread]: Profile dbt_dalgo_demo_project written to C:\Users\royre\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:00:43.574365 [debug] [MainThread]: Command `dbt init` succeeded at 22:00:43.574365 after 254.65 seconds
+[0m22:00:43.575363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B5013340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B72AEE80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B727BA00>]}
+[0m22:00:43.576360 [debug] [MainThread]: Flushing usage events
+[0m22:00:45.473994 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:00:57.326745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D26103340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D2838CC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D2838CE20>]}
+
+
+============================== 22:00:57.332752 | adc1d7b2-ff86-400b-ad38-22369ab2f9c6 ==============================
+[0m22:00:57.332752 [info ] [MainThread]: Running with dbt=1.10.4
+[0m22:00:57.334717 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\royre\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:00:57.371318 [info ] [MainThread]: dbt version: 1.10.4
+[0m22:00:57.372315 [info ] [MainThread]: python version: 3.9.7
+[0m22:00:57.373311 [info ] [MainThread]: python path: C:\Users\royre\Documents\Data pipeline projects\dbt dalgo demo project\venv\Scripts\python.exe
+[0m22:00:57.375305 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m22:00:57.513322 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m22:00:57.521301 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m22:00:57.537260 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m22:00:57.541248 [info ] [MainThread]: Using profiles dir at C:\Users\royre\.dbt
+[0m22:00:57.544240 [info ] [MainThread]: Using profiles.yml file at C:\Users\royre\.dbt\profiles.yml
+[0m22:00:57.546234 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\royre\Documents\Data pipeline projects\dbt dalgo demo project\dbt_project.yml
+[0m22:00:57.549226 [info ] [MainThread]: Configuration:
+[0m22:00:57.551221 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m22:00:57.554213 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:00:57.557205 [info ] [MainThread]: Required dependencies:
+[0m22:00:57.559200 [debug] [MainThread]: Executing "git --help"
+[0m22:00:57.649133 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:00:57.649133 [debug] [MainThread]: STDERR: "b''"
+[0m22:00:57.650131 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:00:57.651128 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m22:00:57.652100 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m22:00:57.653094 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dbt_fund_snowflake", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+Runtime Error
+  Credentials in profile "dbt_fund_snowflake_v2", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+Runtime Error
+  Credentials in profile "dbt_snowflake_pipeline", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m22:00:57.655087 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\royre\Documents\Data pipeline projects\dbt dalgo demo project\dbt_project.yml> not found
+
+[0m22:00:57.656587 [debug] [MainThread]: Command `dbt debug` failed at 22:00:57.656587 after 0.47 seconds
+[0m22:00:57.657554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D26103340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D2832A9A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D284EF1F0>]}
+[0m22:00:57.658549 [debug] [MainThread]: Flushing usage events
+[0m22:00:59.628011 [debug] [MainThread]: An error was encountered while trying to flush usage events
