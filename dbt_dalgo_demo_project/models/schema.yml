@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: Customer dimension
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_order_items
+    description: Fact table of order items
+    columns:
+      - name: order_item_id
+        tests:
+          - unique
+          - not_null
